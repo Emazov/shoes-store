@@ -1,0 +1,17 @@
+{
+	"name": "",
+	"description": "",
+	"price": 110,
+	"brandName": "",
+	"collectionName": "",
+	"gender": ["male", "female"],
+	"colors": ["white", "black", "grey"],
+	"images": ["white-1323-airJordan", "black-1323-airJordan"],
+	"colorImage": [
+		{
+			"colorName": "white",
+			"image": "server/static/images/white-airJordan"
+		}
+	],
+	"size": [35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45]
+}
