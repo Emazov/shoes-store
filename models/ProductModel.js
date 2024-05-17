@@ -4,11 +4,11 @@ const productSchema = new Schema({
 	name: { type: String, required: true },
 	description: { type: String, required: true },
 	price: { type: Number, required: true },
-	brand: {
+	brandName: {
 		name: { type: String, required: true },
 		id: { type: Schema.Types.ObjectId, ref: 'Brand', required: true },
 	},
-	collection: {
+	collectionName: {
 		name: { type: String },
 		id: { type: Schema.Types.ObjectId, ref: 'Collection' },
 	},

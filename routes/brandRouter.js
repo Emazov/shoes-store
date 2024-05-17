@@ -6,6 +6,6 @@ const authMiddleware = require('../middleware/authMiddleware');
 const roleMiddleware = require('../middleware/roleMiddleware');
 
 router.post('/create', roleMiddleware(['ADMIN']), brandController.createBrand);
-router.get('/getAll', authMiddleware, brandController.getAllBrands);
+router.get('/getAll', brandController.getAllBrands);
 
 module.exports = router;

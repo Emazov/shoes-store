@@ -7,9 +7,9 @@ const roleMiddleware = require('../middleware/roleMiddleware');
 const multerConfig = require('../multerConfig');
 
 router.post('/create', roleMiddleware(['ADMIN']), productController.create);
-router.get('/', authMiddleware);
-router.get('/:id', authMiddleware);
-router.put('/:id', roleMiddleware(['ADMIN']));
-router.delete('/:id', roleMiddleware(['ADMIN']));
+router.get('/', productController.getAll);
+router.get('/:id', productController.getOne);
+router.patch('/:id', roleMiddleware(['ADMIN']), productController.update);
+router.delete('/:id', roleMiddleware(['ADMIN']), productController.remove);
 
 module.exports = router;

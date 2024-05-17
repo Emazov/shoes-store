@@ -10,6 +10,6 @@ router.post(
 	roleMiddleware(['ADMIN']),
 	collectionController.createCollection
 );
-router.get('/getAll', authMiddleware, collectionController.getAllCollections);
+router.get('/getAll', collectionController.getAllCollections);
 
 module.exports = router;
